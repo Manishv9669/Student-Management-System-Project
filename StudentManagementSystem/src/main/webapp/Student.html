@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('./images/4.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+            margin: 0;
+        }
+        
+		
+        .form-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f8f9fa;
+            padding: 10px;
+            position: relative; 
+            margin-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2 class="text-center">Add Student</h2>
+        <form action="addStudent" method="post">
+            <div class="mb-2">
+                <label class="form-label">Roll No.</label>
+                <input type="number" name="rollno" class="form-control" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Course</label>
+                <input type="text" name="course" class="form-control" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Marks of Core Java</label>
+                <input type="text" name="cjava" class="form-control" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Marks of Adv Java</label>
+                <input type="text" name="ajava" class="form-control" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Marks of UI</label>
+                <input type="text" name="ui" class="form-control" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Marks of DB</label>
+                <input type="text" name="db" class="form-control" required>
+            </div>
+            <div class="mb-2">
+                <label class="form-label">Marks of Tools</label>
+                <input type="text" name="tools" class="form-control" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success">Add Student</button>
+            </div>
+        </form>
+    </div>
+
+    
+    <footer class="footer">
+        <p>&copy; 2025 Manish Verma. All rights reserved.</p>
+    </footer>
+</body>
+</html>
